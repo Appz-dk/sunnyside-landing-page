@@ -17,8 +17,13 @@
   --Grayish-blue: hsl(210, 4%, 67%);
   --White: hsl(0, 0%, 100%);
 
+  /* Fonts */
+  --ff-barlow: "Barlow", sans-serif;
+  --ff-frances: "Fraunces", serif;
+
   --fs-400: 1rem;
   --fs-500: 1.125rem;
+  --fs-800: 3.5rem;
 }
 
 /* Screen reader class */

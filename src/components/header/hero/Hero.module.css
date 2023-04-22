@@ -1,0 +1,41 @@
+.hero {
+  height: 100vh;
+  /* For mobile searchbar messing with height */
+  height: 100dvh;
+  background-image: url("src/assets/images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.hero-title {
+  /* TODO: Check if negative margin-top is best solution */
+  margin-top: -6rem;
+  font-family: var(--ff-frances);
+  font-size: var(--fs-800);
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--White);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+
+.arrow {
+  animation: bounce 1s linear infinite;
+}
