@@ -1,0 +1,62 @@
+/* Text box styling */
+
+.text-container {
+  --margin-bot: 1.5rem;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.text-container h2 {
+  font-family: var(--ff-frances);
+  font-size: var(--fs-600);
+  font-weight: 900;
+  color: var(--Very-dark-desaturated-blue);
+  word-wrap: break-word;
+  line-height: normal;
+  margin-bottom: var(--margin-bot);
+}
+
+.text-container p {
+  color: var(--Dark-grayish-blue);
+  margin-bottom: var(--margin-bot);
+}
+
+.text-container button {
+  /* Display flex to center the content ::after */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--ff-frances);
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text-container button::after {
+  z-index: -1;
+  --height: 0.6rem;
+  content: "";
+  display: block;
+  width: calc(100% + 1rem);
+  height: var(--height);
+  opacity: 0.3;
+  border-radius: 9999px;
+  margin-top: calc(var(--height) * -1.05);
+}
+
+.text-container button:hover::after {
+  opacity: 1;
+}
+
+.btn-yellow-after::after {
+  background-color: var(--Yellow);
+}
+
+.btn-red-after::after {
+  background-color: var(--Soft-red);
+}
