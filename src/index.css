@@ -21,6 +21,7 @@
   --ff-barlow: "Barlow", sans-serif;
   --ff-frances: "Fraunces", serif;
 
+  --fs-300: 0.95rem;
   --fs-400: 1rem;
   --fs-500: 1.125rem;
   --fs-700: 2.25rem;
@@ -51,6 +52,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-barlow);
 }
 
 /* Remove default margin */
