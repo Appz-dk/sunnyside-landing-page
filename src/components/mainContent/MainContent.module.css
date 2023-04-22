@@ -70,6 +70,46 @@ picture {
   background-color: var(--Soft-red);
 }
 
+/* Image with text styling */
+.image-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 35rem;
+
+  text-align: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.image-with-text h2 {
+  font-weight: 900;
+  font-family: var(--ff-frances);
+}
+
+.image-with-text p {
+  font-family: var(--ff-barlow);
+  font-weight: unset;
+  margin-top: 1.5rem;
+}
+
+.graphic-design {
+  color: var(--Dark-desaturated-cyan);
+  background-image: url("/src/assets/images/mobile/image-graphic-design.jpg");
+}
+
+.photography {
+  color: var(--Dark-blue);
+  background-image: url("/src/assets/images/mobile/image-photography.jpg");
+}
+
+/* Desktop layout & changes */
+
 @media screen and (min-width: 50em) {
   .layout {
     display: grid;
@@ -85,10 +125,28 @@ picture {
   .text-container {
     text-align: unset;
     padding-block: unset;
-    max-width: 25rem;
+    max-width: 30rem;
   }
 
   .text-container h2 {
     font-size: var(--fs-700);
+  }
+
+  .image-with-text {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 1.5rem;
+  }
+
+  .image-with-text p {
+    max-width: 22rem;
+  }
+
+  .graphic-design {
+    background-image: url("/src/assets/images/desktop/image-graphic-design.jpg");
+  }
+
+  .photography {
+    background-image: url("/src/assets/images/desktop/image-photography.jpg");
   }
 }

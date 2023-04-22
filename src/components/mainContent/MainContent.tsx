@@ -31,8 +31,20 @@ const MainContent = () => {
         </p>
         <button className={classes["btn-red-after"]}>Learn more</button>
       </div>
-      <div className={classes["image-with-text"]}></div>
-      <div className={classes["image-with-text"]}></div>
+      <div className={`${classes["image-with-text"]} ${classes["graphic-design"]}`}>
+        <h2>Graphic design</h2>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores your brand message
+          and captures potential clients’ attention.
+        </p>
+      </div>
+      <div className={`${classes["image-with-text"]} ${classes.photography}`}>
+        <h2>Photography</h2>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality photos that improve
+          your business image.
+        </p>
+      </div>
     </section>
   );
 };
