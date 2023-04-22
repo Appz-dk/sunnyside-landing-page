@@ -43,7 +43,7 @@
   animation: bounce 1s linear infinite;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
   .hero {
     background-image: url("src/assets/images/desktop/image-header.jpg");
   }
