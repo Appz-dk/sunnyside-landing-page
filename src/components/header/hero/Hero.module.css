@@ -2,9 +2,10 @@
   height: 100vh;
   /* For mobile searchbar messing with height */
   height: 100dvh;
-  background-image: url("src/assets/images/desktop/image-header.jpg");
+  background-image: url("src/assets/images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   display: flex;
   flex-direction: column;
@@ -17,10 +18,12 @@
   /* TODO: Check if negative margin-top is best solution */
   margin-top: -6rem;
   font-family: var(--ff-frances);
-  font-size: var(--fs-800);
+  font-size: var(--fs-700);
   font-weight: 900;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+  word-wrap: break-word;
+  text-align: center;
   color: var(--White);
 }
 
@@ -38,4 +41,14 @@
 
 .arrow {
   animation: bounce 1s linear infinite;
+}
+
+@media screen and (min-width: 45em) {
+  .hero {
+    background-image: url("src/assets/images/desktop/image-header.jpg");
+  }
+
+  .hero-title {
+    font-size: var(--fs-800);
+  }
 }
