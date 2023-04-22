@@ -6,9 +6,9 @@ import classes from "./MainContent.module.css";
 
 const MainContent = () => {
   return (
-    <section>
+    <section className={classes.layout}>
       <picture>
-        <source media="(min-width:45em)" srcSet={eggDesktop} />
+        <source media="(min-width:50em)" srcSet={eggDesktop} />
         <img src={eggMobile} />
       </picture>
       <div className={classes["text-container"]}>
@@ -20,7 +20,7 @@ const MainContent = () => {
         <button className={classes["btn-yellow-after"]}>Learn more</button>
       </div>
       <picture>
-        <source media="(min-width:45em)" srcSet={glassDesktop} />
+        <source media="(min-width:50em)" srcSet={glassDesktop} />
         <img src={glassMobile} />
       </picture>
       <div className={classes["text-container"]}>

@@ -1,3 +1,12 @@
+/* Image without text styling */
+img {
+  width: 100%;
+}
+
+picture {
+  width: 100%;
+}
+
 /* Text box styling */
 
 .text-container {
@@ -59,4 +68,27 @@
 
 .btn-red-after::after {
   background-color: var(--Soft-red);
+}
+
+@media screen and (min-width: 50em) {
+  .layout {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .text-container:first-of-type {
+    grid-row-start: 1;
+  }
+
+  .text-container {
+    text-align: unset;
+    padding-block: unset;
+    max-width: 25rem;
+  }
+
+  .text-container h2 {
+    font-size: var(--fs-700);
+  }
 }
