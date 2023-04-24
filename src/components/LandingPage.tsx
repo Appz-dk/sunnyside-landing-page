@@ -1,6 +1,7 @@
 import Header from "./header/Header";
 import Hero from "./header/hero/Hero";
 import MainContent from "./mainContent/MainContent";
+import Testtimonials from "./testimonials/Testtimonials";
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <main>
         <Hero />
         <MainContent />
+        <Testtimonials />
       </main>
       <footer></footer>
     </>
