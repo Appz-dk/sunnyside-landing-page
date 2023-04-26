@@ -43,6 +43,12 @@ const Nav = () => {
     });
   };
 
+  const mobileMenuKeyboardHandler = (e: React.KeyboardEvent) => {
+    if (e.code === "Space" || e.code === "Enter") {
+      toggleMenu();
+    }
+  };
+
   return (
     <nav className={classes.nav}>
       <div className={classes.backdrop} data-show={showMenu} onClick={toggleMenu} />
@@ -54,6 +60,8 @@ const Nav = () => {
         aria-expanded={showMenu}
         className={classes.hamburger}
         onClick={toggleMenu}
+        tabIndex={1}
+        onKeyDown={mobileMenuKeyboardHandler}
       />
       <ul role="list" data-show={showMenu} className={classes["nav-list"]}>
         <NavList />

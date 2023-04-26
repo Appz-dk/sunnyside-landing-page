@@ -107,7 +107,8 @@
   .nav-list button {
     background-color: var(--Yellow);
   }
-  .nav-list button:hover {
+  .nav-list button:hover,
+  .nav-list button:focus {
     color: var(--White);
     background-color: var(--Yellow);
   }
