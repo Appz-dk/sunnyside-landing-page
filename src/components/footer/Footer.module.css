@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--Footer-background-clr);
+  padding: 4rem 2.5rem;
+}
+
+.footer svg {
+  transform: scale(1.5);
+}
+
+.footer-logo path {
+  fill: var(--Dark-moderate-cyan);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-300);
+  color: var(--Dark-moderate-cyan);
+  filter: brightness(120%);
+}
+
+.footer-nav a {
+  text-decoration: inherit;
+  color: inherit;
+}

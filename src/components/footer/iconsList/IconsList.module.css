@@ -1,0 +1,10 @@
+.icons-list {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.icons-list svg {
+  transform: scale(1);
+  cursor: pointer;
+}
