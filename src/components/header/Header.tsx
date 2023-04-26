@@ -1,4 +1,3 @@
-import Hero from "./hero/Hero";
 import Nav from "./nav/Nav";
 const Header = () => {
   return (
