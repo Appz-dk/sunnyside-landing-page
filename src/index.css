@@ -8,7 +8,8 @@
   /* (photography text) */
   --Dark-blue: hsl(198, 62%, 26%);
   /* (footer) */
-  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+  --Dark-moderate-cyan: hsl(168, 34%, 30%);
+  --Footer-background-clr: hsla(168, 34%, 65%);
 
   /* Neutral colors */
   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
