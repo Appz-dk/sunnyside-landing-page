@@ -7,6 +7,11 @@
   height: fit-content;
   padding: 1.5rem 2rem;
   color: var(--White);
+  z-index: 9999;
+}
+
+.backdrop {
+  display: none;
 }
 
 .nav-list {
@@ -45,6 +50,18 @@
 }
 
 @media screen and (max-width: 45em) {
+  .backdrop[data-show="true"] {
+    display: block;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+  }
+
   .nav-list {
     display: none;
     position: absolute;
