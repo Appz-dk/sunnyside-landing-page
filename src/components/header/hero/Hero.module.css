@@ -2,7 +2,7 @@
   height: 100vh;
   /* For mobile searchbar messing with height */
   height: 100dvh;
-  background-image: url("src/assets/images/mobile/image-header.jpg");
+  background-image: url("../../../assets/images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@
 
 @media screen and (min-width: 50em) {
   .hero {
-    background-image: url("src/assets/images/desktop/image-header.jpg");
+    background-image: url("../../../assets/images/desktop/image-header.jpg");
   }
 
   .hero-title {
