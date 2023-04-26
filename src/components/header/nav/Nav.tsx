@@ -1,11 +1,33 @@
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
 import { ReactComponent as Hamburger } from "../../../assets/images/icon-hamburger.svg";
 import classes from "./Nav.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavList from "./NavList";
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const isDesktopMode = screenWidth >= 800;
+
+  function handleWindowSizeChange() {
+    setScreenWidth(window.innerWidth);
+  }
+
+  // Updating screen width to keep track of "mobile and desktop mode"
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  // Resetting mobile menu & body styling when going into desktop mode
+  useEffect(() => {
+    if (isDesktopMode) {
+      document.body.style.overflow = "unset";
+      setShowMenu(false);
+    }
+  }, [isDesktopMode]);
 
   const toggleMenu = () => {
     setShowMenu((currentMenuState) => {
