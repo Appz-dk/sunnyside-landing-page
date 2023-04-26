@@ -88,7 +88,7 @@
     border-bottom: var(--triangle-size) solid var(--White);
     position: absolute;
     right: 0;
-    top: calc(var(--triangle-size) * -1);
+    top: calc(var(--triangle-size) * -1 + 1px);
   }
 
   .nav-list[data-show="true"] {
