@@ -12,10 +12,10 @@
 }
 
 .testimonial-text {
-  font-size: var(--fs-200);
+  font-size: var(--fs-300);
   text-align: center;
   color: var(--Very-dark-grayish-blue);
-  max-width: 15rem;
+  max-width: 17rem;
 }
 
 .testimonial-author {
@@ -41,5 +41,9 @@
 @media screen and (min-width: 50em) {
   .testimonial-text {
     max-width: unset;
+  }
+
+  .testimonial-text {
+    font-size: var(--fs-400);
   }
 }
