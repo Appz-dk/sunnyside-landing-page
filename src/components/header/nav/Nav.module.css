@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 49.999em) {
   .backdrop[data-show="true"] {
     display: block;
     background-color: black;
