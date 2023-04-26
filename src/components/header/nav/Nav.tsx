@@ -57,6 +57,9 @@ const Nav = () => {
       />
       <ul role="list" data-show={showMenu} className={classes["nav-list"]}>
         <NavList />
+        <li>
+          <button>Contact</button>
+        </li>
       </ul>
     </nav>
   );
