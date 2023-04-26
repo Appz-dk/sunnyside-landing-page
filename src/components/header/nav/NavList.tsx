@@ -10,9 +10,6 @@ const NavList = () => {
       <li>
         <a href="#projects">Projects</a>
       </li>
-      <li>
-        <button>Contact</button>
-      </li>
     </>
   );
 };
