@@ -1,3 +1,4 @@
+import Gallery from "./gallery/Gallery";
 import Header from "./header/Header";
 import Hero from "./header/hero/Hero";
 import MainContent from "./mainContent/MainContent";
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <Hero />
         <MainContent />
         <Testtimonials />
+        <Gallery />
       </main>
       <footer></footer>
     </>
